@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单项</title>
+</head>
+<body>
+
+<!-- 表单项
+  input：可以通过type属性值，改变元素展示的样式
+    text：文本输入
+        placeholder:给一个框框的提示信息
+    password：密码输入
+    radio：单选框 (1.如果要实现单选，name值必须相同
+                  2.一般会给每个单选框提供value属性，指定其被选中后提供的值
+                  3.默认被选中 checked）
+    chekbox：复选框
+                  (1.一般会给每个单选框提供value属性，指定其被选中后提供的值
+                  2.默认被选中 checked)
+    file:文件选择框
+
+  label：可以点击文字选中输入框，for属性后的值应该对应他所对的输入框的id
+  select:下拉
+-->
+    <form  action="#" method="post">
+        <label for="username">用户名</label>用户名：<input type="text" name="username" placeholder="请输入用户名" id="username"><br>
+        密码：<input type="password" name="password" placeholder="请输入密码"><br>
+        性别：<input type="radio" name="gender" value="male" checked> 男
+             <input type="radio" name="gender" value="female"> 女
+      <br>
+        爱好：<input type="checkbox" name="hobby" value="shopping"> 逛街
+              <input type="checkbox" name="hobby" value="java" checked> java
+              <input type="checkbox" name="hobby" value="game"> 游戏<br>
+        图片：<input type="file" name="file"><br>
+        隐藏区域:<input type="hidden" name="id"> <br>
+
+      取色器：<input type="color" name="color"><br>
+      生日：<input type="date" name="birthday"><br>
+     生日： <input type="datetime-local" name="birthday"><br>
+      邮箱：<input type="email" name="email"><br>
+      年龄：<input type="number" name="age"><br>
+      省份：<select name="province">
+            <option>--请选择-- </option>
+            <option>北京 </option>
+            <option>上海 </option>
+            <option>唐山</option>
+             </select><br>
+      自我描述：<textarea cols="20" rows="5" name="des"></textarea>
+      <br>
+      <input type="submit" value="登录">
+<!--      &lt;!&ndash;图片提交&ndash;&gt;-->
+<!--      <input type="image" src="">-->
+    </form>
+<!--  box-size: border-box;
+    设置了内边距之后就会改变默认的盒子大小，用以上方式就不会改变外边框大小
+-->
+<!--设置原角
+border-radius: 5px;
+-->
+<!--vertical-align:center
+        垂直居中
+-->
+</body>
+</html>
